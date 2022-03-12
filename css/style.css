@@ -1,0 +1,232 @@
+:root {
+    --dark: rgb(0, 0, 0);
+    --darkLight: rgb(23, 23, 23);
+    --aqua: rgb(5, 164, 176);
+    --aquaLight: rgb(2, 187, 220);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* General tags */
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark);
+    background-image: url(/assets/img/galaxy.png);
+    color: var(--aqua);
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    z-index: 0;
+}
+
+h1 {
+    font-size: 360%;
+}
+
+h2 {
+    font-size: 330%;
+}
+
+h3 {
+    font-size: 250%;
+}
+
+a {
+    color: var(--aquaLight);
+}
+
+p {
+    color: var(--aquaLight);
+}
+
+aside {
+    display: flex;
+    border-right: 4px solid #001088;
+    padding: auto;
+    width: 25%;
+}
+
+/* Navigation */
+#logo{
+    transform: none;
+}
+
+.nav {
+    background-color: var(--dark);
+    opacity: 0.9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+    border: 50px;
+    margin: 0 auto;
+}
+
+.nav h1{
+    display: block;
+}
+
+.nav h1:hover{
+    color: rgb(255, 75, 138);
+}
+
+.nav a{
+    display: block;
+    transition: all 0.3s ease-out;
+}
+
+.nav ul{
+    display: flex;
+    margin: 0 auto;
+}
+
+.nav li{
+    font-size: 130%;
+    margin: 0 auto;
+    margin-left: 100px;
+}
+
+.nav a:hover{
+    color:rgb(255, 75, 138);
+    transform: scale(1.2);
+}
+
+/* Banner */
+.welcome {
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(/assets/img/smoke.gif);
+    opacity: 0.9;
+    padding: 20px;
+    background-size: 100%;
+}
+
+.welcome h2{
+    padding-top: 50px;
+}
+
+/* About me*/ 
+.journey {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.journey h3 {
+    width: 200px;
+}
+
+.journey p {
+    width: 700px;
+    padding-left: 100px;
+}
+
+/* Portfolio */
+.projects {
+    display:flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.snippets {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 143px;
+}
+
+.snippet1{
+    display: flex;
+    width: 100%;
+    background-image: url("/assets/img/TMBss.png");
+    opacity: 0.7;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 15px;
+    align-content: center;
+}
+
+.snippet1 a {
+    width: 100%;
+    height: 400px;
+}
+
+.snippet1:hover {
+    background-color: rgb(162, 160, 160);
+    opacity: 1;
+}
+
+
+.snippet2{
+    display: flex;
+    width: 45%;
+    background-image: url("/assets/img/TMBss.png");
+    opacity: 0.7;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 2.5%;
+}
+
+.snippet2 a {
+    width: 100%;
+    height: 200px;
+}
+
+.snippet2:hover {
+    background-color: rgb(162, 160, 160);
+    opacity: 1;
+}
+
+/* Coming Soon */
+.snippet3{
+    display: flex;
+    width: 45%;
+    background-color:rgb(162, 160, 160);
+    opacity: 0.7;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 2.5%;
+
+}
+
+.snippet3 a {
+    width: 100%;
+    height: 200px;
+}
+
+.snippet3:hover {
+    background-color: rgb(162, 160, 160);
+    opacity: 1;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 50px;
+    background-color: var(--dark);
+    opacity: 0.9;
+}
+
+.footer ul{
+    display: flex;
+    align-items: center;
+}
+
+.footer li{
+    margin-left: 50px;
+}
+
+.logoGh{
+    height: 80px;
+    width: 80px;
+}
+
+.logoIg{
+    height: 50px;
+    width: 50px;
+}
