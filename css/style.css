@@ -107,10 +107,32 @@ p {
 
 /* Portfolio */
 
-.snippet{
+.main-snippet{
     opacity: 0.7;
     align-content: center;
     background-size: contain;
+    margin-top: 20px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.main-snippet:hover {
+    background-color: rgb(162, 160, 160);
+    opacity: 1;
+}
+
+.snippet {
+    opacity: 0.7;
+    align-content: center;
+    background-size: contain;
+    margin-top: 20px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.snippet img {
+    width: 525px;
+    height: 300px;
 }
 
 .snippet:hover {
@@ -128,6 +150,16 @@ p {
     opacity: 0.9;
 }
 
+.footer a{
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+}
+
+.footer a:hover {
+    color: rgb(255, 75, 138);
+    transform: scale(1.2);
+}
+
 .footer ul{
     display: flex;
     flex-wrap: wrap;
@@ -136,6 +168,7 @@ p {
 
 .footer li{
     margin-left: 50px;
+    list-style: none;
 }
 
 .logoGh{
