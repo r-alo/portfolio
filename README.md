@@ -8,4 +8,4 @@ The results:
 
 [GitHub page](https://github.com/r-alo/hmwSession2)
 
-![First Portfolio Draft](./assets/img/portofolio.png)
+![First Portfolio Draft](./assets/img/portfolio.png)
