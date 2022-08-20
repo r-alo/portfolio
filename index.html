@@ -4,85 +4,107 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> 
     <link rel="stylesheet" href="./css/style.css">
     <title>Ralo's</title>
 </head>
 <body>
 
 <!-- Navigation -->
-<header>
-    <div class="nav">
-        <a href="#" id="logo"><h1>Kevin Ralo</h1></a>
-        <nav>
-            <ul>
-                <li><a href="#journey">Journey</a></li>
-                <li><a href="#projects"> Projects</a></li>
-                <li><a href="#footer"> Contact</a></li>
-                <!-- <li><a href="./cv.html">CV</a></li> -->
-            </ul>
-        </nav>
-    </div>
-</header>
+    <nav class="navbar navbar-expand-lg nav">
+        <div class="container-fluid">
+            <a class="" href="#"><h1>Kevin Ralo</h1></a>
+            <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="" href="#journey">Journey</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="" href="#footer">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
 
 <!-- Banner -->
     <div class="welcome">
-            <img src="" alt="">
-            <h2>Welcome!</h2>
+        <img src="" alt="">
+        <h2>Welcome!</h2>
     </div>
-
-    <main>
-
+    
+    <div class="container">
     <!-- About me -->
-        <div class="journey" id="journey">
-            <aside><h3>A bit about me</h3></aside>
-            <p>My name is Kevin Ramírez; better known as Ralo. I'm a driven, empathic and positive 30y old mexican; looking to have more freedom and be able to move around while making amazing/creative projects that help people get out there in the world through helpful programming.</p>
+        <div class="journey row" id="journey">
+            <div class="col-md-6 fs-1">
+                A bit about me
+            </div>
+            <div class="col-md-6 journey">
+            My name is Kevin Ramírez; better known as Ralo. I'm a driven, empathic and positive 30y old mexican; looking to have more freedom and be able to move around while making amazing/creative projects that help people get out there in the world through helpful programming.
+            </div>
         </div>
 
+        <div class="row">
         <!-- Portfolio -->
-        <div class="projects" id="projects">
-            <aside><h3>Projects</h3></aside>
-            <div class="snippets">
-
-                <div class="snippet1">
-                    <a href="https://themindbehind.000webhostapp.com" target="_blank" >
-                    <h4>The Mind Behind</h4>
-                    <p>HTML & CSS</p>
-                </a>
+            <div class="col-md-6">
+                <h3 id="projects">Projects</h3>
+            </div>
+            <div class="col-md-6">
+                <div class="snippet card">
+                    <a href="https://themindbehind.000webhostapp.com" target="_blank">
+                        <img src="./assets/img/TMBss.png" class="card-img" alt="">
+                        <div class="card-img-overlay">
+                        <h4>The Mind Behind</h4>
+                        <p>HTML & CSS</p>
+                        </div>
+                    </a>
                 </div>
+            </div>
+        </div>
 
-                <div class="snippet2">
+        <div class="row">
+                <div class="snippet card">
                     <a href="https://r-alo.github.io/fanPageWeeknd/" target="_blank">
                     <h4>The Weeknd(fan site)</h4>
                     <p>HTML</p>
                     </a>
                 </div>
 
-                <div class="snippet3">
+                <div class="snippet card">
                     <a href="">
                     <h4>Coming Soon</h4>
                     <p>Wait for it...</p>
                     </a>
                 </div>
 
-                <div class="snippet3">
+                <div class="snippet card">
                     <a href="">
                     <h4>Coming Soon</h4>
                     <p>Wait for it...</p>
                     </a>
                 </div>
 
-                <div class="snippet3">
+                <div class="snippet card">
                     <a href="">
                     <h4>Coming Soon</h4>
                     <p>Wait for it...</p>
                     </a>
                 </div>
-
-            </div>
+            
         </div>
 
-    </main>
+    </div>
 
     <footer>
         
@@ -98,6 +120,9 @@
     </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

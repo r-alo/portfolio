@@ -10,8 +10,8 @@ html {
 }
 /* General tags */
 body {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 10vh;
     background-color: var(--dark);
     background-image: url(../assets/img/galaxy.png);
     color: var(--aqua);
@@ -41,27 +41,17 @@ p {
     color: var(--aquaLight);
 }
 
-aside {
-    display: flex;
-    border-right: 4px solid #001088;
-    padding: auto;
-    width: 25%;
-}
 
 /* Navigation */
 #logo{
     transform: none;
+    text-decoration: none;
 }
 
 .nav {
-    background-color: var(--dark);
+
     opacity: 0.9;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 35px;
-    border: 50px;
-    margin: 0 auto;
+
 }
 
 .nav h1{
@@ -75,17 +65,19 @@ aside {
 .nav a{
     display: block;
     transition: all 0.3s ease-out;
+    text-decoration: none;
 }
 
 .nav ul{
     display: flex;
-    margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 .nav li{
     font-size: 130%;
     margin: 0 auto;
     margin-left: 100px;
+    list-style: none;
 }
 
 .nav a:hover{
@@ -109,95 +101,19 @@ aside {
 
 /* About me*/ 
 .journey {
-    display: flex;
-    align-items: center;
-    padding: 50px;
+    padding: 50px 20px;
 }
 
-.journey h3 {
-    width: 200px;
-}
-
-.journey p {
-    width: 700px;
-    padding-left: 100px;
-}
 
 /* Portfolio */
-.projects {
-    display:flex;
-    flex-wrap: wrap;
+
+.snippet{
+    opacity: 0.7;
     align-content: center;
-    padding: 50px;
-    margin: 0 auto;
-}
-
-.snippets {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 143px;
-}
-
-.snippet1{
-    display: flex;
-    width: 100%;
-    background-image: url("../assets/img/TMBss.png");
-    opacity: 0.7;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 15px;
-    align-content: center;
-}
-
-.snippet1 a {
-    width: 100%;
-    height: 400px;
-}
-
-.snippet1:hover {
-    background-color: rgb(162, 160, 160);
-    opacity: 1;
-}
-
-
-.snippet2{
-    display: flex;
-    width: 45%;
-    background-image: url("../assets/img/weeknd.jpeg");
-    opacity: 0.7;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 2.5%;
-}
-
-.snippet2 a {
-    width: 100%;
-    height: 200px;
-}
-
-.snippet2:hover {
-    background-color: rgb(162, 160, 160);
-    opacity: 1;
-}
-
-/* Coming Soon */
-.snippet3{
-    display: flex;
-    width: 45%;
-    background-color:rgb(162, 160, 160);
-    opacity: 0.7;
     background-size: contain;
-    background-repeat: no-repeat;
-    margin: 2.5%;
-
 }
 
-.snippet3 a {
-    width: 100%;
-    height: 200px;
-}
-
-.snippet3:hover {
+.snippet:hover {
     background-color: rgb(162, 160, 160);
     opacity: 1;
 }
@@ -207,13 +123,14 @@ aside {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 50px;
+    
     background-color: var(--dark);
     opacity: 0.9;
 }
 
 .footer ul{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
